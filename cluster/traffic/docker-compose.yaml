@@ -1,0 +1,20 @@
+
+services:
+  http:
+    image: zhangsean/rinetd
+    ports:
+      - '80:8000'
+    command:
+      - '${IP_ADDRESS} 80'
+  https:
+    image: zhangsean/rinetd
+    ports:
+      - '443:8001'
+    command:
+      - "${IP_ADDRESS} 443"
+  ssh:
+    image: zhangsean/rinetd
+    ports:
+      - '22:8002'
+    command:
+      - "${IP_ADDRESS} 22"
