@@ -38,3 +38,15 @@ Additionally, it will add a TCP proxy to the cluster so your localhost will go d
 ```shell
 ./bootstrap.sh
 ```
+
+### [Ingress Controller](ingress_controller/install.sh)
+Will install the NGINX ingress controller
+
+
+### [Traffic Proxy](traffic/install.sh)
+Will set up some docker containers to proxy the tcp connections from your localhost to the loadbalancer IP of the ingress NGINX. 
+
+### [Cert Manager](cert_manager)
+Will install cert manager for creating certificates. Will come WITHOUT a cluster issuer. 
+Adding Wildcard cert for ingress to use as default
+They are highly individual therefore I didn't go through the

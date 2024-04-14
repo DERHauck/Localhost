@@ -1,0 +1,9 @@
+
+
+extraArgs:
+  - '--cloudflare-dns-records-per-page=5000'
+
+policy: sync
+provider:
+  name: cloudflare
+

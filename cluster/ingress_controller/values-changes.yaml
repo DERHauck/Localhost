@@ -6,3 +6,5 @@ controller:
     requests:
       cpu: 100m
       memory: 90Mi
+  ingressClassResource:
+    name: localhost

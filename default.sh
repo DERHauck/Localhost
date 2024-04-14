@@ -44,3 +44,13 @@ info() {
     log "INFO" "${@}"
   fi
 }
+
+error() {
+  if loglevel "ERROR"
+  then
+    log "ERROR" "${@}"
+  fi
+}
+
+PROJECT_ROOT=${0}
+
