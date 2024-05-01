@@ -9,17 +9,17 @@ BOOTSTRAP_DIR=${CURRENT_DIR}
 info "Component Cert Manager"
 cd cert_manager || exit 1
 NAMESPACE="certification"
-NAME="default"
+CHART_NAME="default"
 source install.sh
 cd "${BOOTSTRAP_DIR}" || exit 1
 
 info "Component Ingress Controller"
 
 cd ingress_controller || exit 1
-CERT_NAME=${NAME}
+CERT_NAME=${CHART_NAME}
 CERT_NAMESPACE=${NAMESPACE}
 NAMESPACE="ingress"
-NAME="default"
+CHART_NAME="default"
 source install.sh
 cd "${BOOTSTRAP_DIR}" || exit 1
 
